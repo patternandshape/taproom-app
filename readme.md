@@ -4,7 +4,7 @@
 
 March 23, 2016
 
-##### By Molly Curtin &amp;
+##### By Molly Curtin &amp; Oskar Radon
 
 ### Description
 
@@ -38,4 +38,4 @@ An app where a bartender can keep track of their kegs. They can check how much i
 
 *This software is licensed under the MIT license.*
 
-&copy; 2016 **Molly Curtin &amp; **
+&copy; 2016 **Molly Curtin &amp; Oskar Radon**

@@ -1,0 +1,9 @@
+list of kegs
+button for new keg
+keg model has
+  description: name, brand, price, alcohol content
+  *pints left out of 124
+each keg has a button to sell pint -> pints left -1
+drop down menu to sort kegs with <10 pints left
+edit button for keg -> be able to change each property
+keg name is blue is price > $5 is orange if price < $5
