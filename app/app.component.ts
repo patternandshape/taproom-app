@@ -29,3 +29,19 @@ import {Component, EventEmitter} from 'angular2/core';
 //     console.log('parent', clickedTask);
 //   }
 // }
+@Component ({
+  selector: 'my-app',
+  directives :[KegListComponent],
+  template: `
+  <div class="container">
+  <h1>List o' Kegs</h1>
+  `
+})
+export class KegComponent{
+  public kegs: Keg[];
+  constructor() {
+    this.kegs = [
+      new Keg("White Ale", "Hitachino", 5.5)
+    ];
+  }
+}
