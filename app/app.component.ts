@@ -1,40 +1,18 @@
 import {Component, EventEmitter} from 'angular2/core';
-// import {TaskListComponent} from './task-list.component';
-// import {Task} from './task.model';
-//
-// @Component({
-//   selector: 'my-app',
-//   directives: [TaskListComponent],
-//   template: `
-//     <div class="container">
-//       <h1>To-Do List</h1>
-//       <task-list
-//       [taskList]="tasks"
-//       (onTaskSelect)="taskWasSelected($event)">
-//       </task-list>
-//     <div>
-//   `
-// })
-// export class AppComponent {
-//   public tasks: Task[]; //Task[] (or Array<Task>) identifies tasks as an array of Task objects
-//   constructor() {
-//     this.tasks = [
-//       new Task("Create To-Do List app.", 0),
-//       new Task("Learn Kung Fu.", 1),
-//       new Task("Rewatch all the Lord of the Rings movies.", 2),
-//       new Task("Do the laundry.", 3)
-//     ];
-//   }
-//   taskWasSelected(clickedTask: Task): void {
-//     console.log('parent', clickedTask);
-//   }
-// }
+import {KegListComponent} from './keg-list.component';
+import {Keg} from './keg.model';
+
 @Component ({
   selector: 'my-app',
   directives :[KegListComponent],
   template: `
-  <div class="container">
-  <h1>List o' Kegs</h1>
+    <div class= "container">
+      <h1>List o' Kegs</h1>
+      <keg-list
+      [kegList]="kegs"
+      (onKegSelect)="kegWasSelected($event)">
+      </keg-list>
+    <div>
   `
 })
 export class AppComponent{
@@ -43,5 +21,8 @@ export class AppComponent{
     this.kegs = [
       new Keg("White Ale", "Hitachino", 5.5)
     ];
+  }
+  kegWasSelected(clickedKeg: Keg): void {
+    console.log(clickedKeg);
   }
 }
