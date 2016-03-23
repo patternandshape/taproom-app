@@ -41,7 +41,7 @@ export class KegListComponent {
   }
   createKeg(public name: string, public brand: string, public alcoholContent: number): void {
     this.kegList.push(
-    new Keg(name, brand, alcoholContent, this.taskList.length)
+    new Keg(name, brand, alcoholContent, this.KegList.length)
     );
   }
   onChange(filterOption){

@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {Keg} from './keg.model';
+import { Component } from 'angular2/core';
+import { Keg } from './keg.model';
 
 @Component ({
   selector: 'edit-keg-details',
@@ -16,5 +16,5 @@ import {Keg} from './keg.model';
   `
 })
 export class EditKegDetailsComponent {
-  public task: Task;
+  public keg: Keg;
 }
