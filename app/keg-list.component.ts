@@ -3,7 +3,7 @@ import { KegComponent } from './keg.component';
 import { Keg } from './keg.model';
 import { EditKegDetailsComponent } from './edit-keg-details.component';
 import { NewKegComponent} from './new-keg.component';
-import {DonePipe} from './done.pipe';
+import { DonePipe } from './done.pipe';
 
 @Component ({
   selector: 'keg-list',
