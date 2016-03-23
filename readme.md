@@ -1,6 +1,6 @@
 # Taproom App
 
-##### A small Angular app that a bar could use to keep track of their kegs.
+##### A small Angular2 app that a bar could use to keep track of their kegs.
 
 March 23, 2016
 
@@ -8,7 +8,7 @@ March 23, 2016
 
 ### Description
 
-An app where a bartender can keep track of their kegs. They can check how much is left in each keg as well as the name, brand, price and alcohol content of each kind.
+An app where a bartender can keep track of their kegs. They can check how much is left in each keg and view the name, brand, price and alcohol content of each kind.
 
 ### Setup Instructions
 
