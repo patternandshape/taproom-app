@@ -37,7 +37,7 @@ import {Component, EventEmitter} from 'angular2/core';
   <h1>List o' Kegs</h1>
   `
 })
-export class KegComponent{
+export class AppComponent{
   public kegs: Keg[];
   constructor() {
     this.kegs = [
