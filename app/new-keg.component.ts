@@ -2,7 +2,7 @@ import {Component, EventEmitter} from 'angular2/core';
 import {Keg} from './keg.model';
 
 @Component ({
-  selector: 'new-task',
+  selector: 'new-keg',
   outputs: ['onSubmitNewKeg'],
   template: `
   <div class="keg-form">
@@ -17,7 +17,7 @@ import {Keg} from './keg.model';
 export class NewKegComponent {
   public onSubmitNewKeg: EventEmitter<String>;
   constructor(){
-    this.onSubmitNewTask = new EventEmitter();
+    this.onSubmitNewKeg = new EventEmitter();
   }
   addKeg(kegName: HTMLInputElement, kegBrand: HTMLInputElement, kegAlcoholContent: HTMLInputElement){
     var newKeg = new Keg(kegName.value,kegBrand.value, parseInt(kegAlcoholContent.value));

@@ -20,7 +20,7 @@ import { DonePipe } from './done.pipe';
     <keg-display *ngFor="#currentKeg of kegList | done:filterDone"
     (click)="kegClicked(currentKeg)"
     [class.selected]="currentKeg === selectedKeg"
-    [task]="currentKeg">
+    [keg]="currentKeg">
     </keg-display>
     <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">
     </edit-keg-details>
