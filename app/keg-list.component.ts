@@ -18,7 +18,7 @@ import { NewKegComponent} from './new-keg.component';
       <option value="moreThan10" selected="selected">Plenty o' Pints</option>
     </select>
     <keg-display *ngFor="#currentKeg of kegList"
-
+    (click)="kegClicked(currentKeg)"
     [keg]="currentKeg">
     </keg-display>
     <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">
@@ -39,9 +39,10 @@ export class KegListComponent {
   kegClicked(clickedKeg: Keg): void {
     this.selectedKeg = clickedKeg;
     this.onKegSelect.emit(clickedKeg);
+    console.log(this.selectedKeg);
   }
   createKeg(createdKeg: Keg): void {
-    this.kegList.push(createdKeg);
+    this.kegList.push(createdKeg)
   }
   onChange(filterOption){
     this.filterDone = filterOption;

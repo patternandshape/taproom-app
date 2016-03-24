@@ -4,7 +4,6 @@ export class Keg {
     public name: string,
     public brand: string,
     public alcoholContent: number,
-    public price: number,
-    public id?: number) {
+    public price: number) {
   }
 }
