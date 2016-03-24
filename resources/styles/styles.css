@@ -1,7 +1,13 @@
 h1 {
   color: blue;
+  font-family: 'Bevan', cursive;
+  font-size: 5em;
+  letter-spacing: 0.1em;
 }
 
+body {
+  background: #ceebfd;
+}
 .cheap {
   color: blue;
 }
@@ -16,10 +22,11 @@ h1 {
 
 button {
   margin-top: 25px;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   border: none;
   border-radius: 50px;
+  margin-right: 20px;
 }
 
 .lowKeg {

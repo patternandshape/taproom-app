@@ -2,10 +2,10 @@ import { Component, EventEmitter } from 'angular2/core';
 import { KegComponent } from './keg.component';
 import { Keg } from './keg.model';
 import { EditKegDetailsComponent } from './edit-keg-details.component';
-import { NewKegComponent} from './new-keg.component';
+import { NewKegComponent } from './new-keg.component';
 import { PintsPipe } from './pints.pipe';
 
-@Component ({
+@Component({
   selector: 'keg-list',
   inputs: ['kegList'],
   outputs: ['onKegSelect'],
@@ -29,7 +29,7 @@ import { PintsPipe } from './pints.pipe';
 })
 export class KegListComponent {
   public kegList: Keg[];
-  public onKegSelect: EventEmitter<Keg>;
+  public onKegSelect: EventEmitter < Keg > ;
   public selectedKeg: Keg;
   public filterDone: string = "all";
   constructor() {
@@ -43,7 +43,7 @@ export class KegListComponent {
   createKeg(createdKeg: Keg): void {
     this.kegList.push(createdKeg)
   }
-  onChange(filterOption){
+  onChange(filterOption) {
     this.filterDone = filterOption;
   }
 }

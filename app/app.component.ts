@@ -1,10 +1,10 @@
-import {Component, EventEmitter} from 'angular2/core';
-import {KegListComponent} from './keg-list.component';
-import {Keg} from './keg.model';
+import { Component, EventEmitter } from 'angular2/core';
+import { KegListComponent } from './keg-list.component';
+import { Keg } from './keg.model';
 
-@Component ({
+@Component({
   selector: 'my-app',
-  directives :[KegListComponent],
+  directives: [KegListComponent],
   template: `
     <div class= "container">
       <h1>List o' Kegs</h1>
@@ -15,7 +15,7 @@ import {Keg} from './keg.model';
     <div>
   `
 })
-export class AppComponent{
+export class AppComponent {
   public kegs: Keg[];
   constructor() {
     this.kegs = [

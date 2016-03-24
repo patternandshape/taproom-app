@@ -2,7 +2,7 @@
 
 ##### A small Angular2 app that a bar could use to keep track of their kegs.
 
-March 23, 2016
+March 24, 2016
 
 ##### By Molly Curtin &amp; Oskar Radon
 
@@ -26,8 +26,6 @@ An app where a bartender can keep track of their kegs. They can check how much i
 * CSS
 * Angular2
 * TypeScript
-* Terminal
-* Git
 * NPM
 * Node
 * Bower
