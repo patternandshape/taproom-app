@@ -7,13 +7,13 @@ import { Keg } from './keg.model';
   template: `
   <div>
     <button (click)="sellPint()" class="btn-success btn-lg add-button">Sell Pint</button>
-    <label>{{ keg.name }}</label>
+    <label>{{ keg.brand }} {{ keg.name }}, {{ keg.alcoholContent }}% ABV, \${{ keg.price }}</label>
   </div>
   `
 }) // does sellPint need any arguments?????
 export class KegComponent {
   public keg: Keg;
-  sellPint(setPints: number) {
-    this.keg.pints = setPints;
+  sellPint() {
+    this.keg.pints -= 1;
   }
 }

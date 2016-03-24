@@ -16,7 +16,7 @@ import {Keg} from './keg.model';
   `
 })
 export class NewKegComponent {
-  public onSubmitNewKeg: EventEmitter<String>;
+  public onSubmitNewKeg: EventEmitter<Keg>;
   constructor(){
     this.onSubmitNewKeg = new EventEmitter();
   }
