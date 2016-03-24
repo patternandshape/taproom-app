@@ -9,8 +9,9 @@ import {Keg} from './keg.model';
   <h3>Create Keg: </h3>
   <input placeholder="Name" class="col-sm-8 input-lg" #newName>
   <input placeholder="Brand" class="col-sm-8 input-lg" #newBrand>
-  <input placeholder="AlcoholContent" class="col-sm-8 input-lg" #newAlcoholContent>
-  <button (click)="addKeg(newName, newBrand, newAlcoholContent)" class="btn-success btn-lg add-button">Add</button>
+  <input placeholder="Alcohol Content" class="col-sm-8 input-lg" #newAlcoholContent>
+  <input placeholder="Price" class="col-sm-8 input-lg" #newPrice>
+  <button (click)="addKeg(newName, newBrand, newAlcoholContent, newPrice)" class="btn-success btn-lg add-button">Add</button>
   </div>
   `
 })
@@ -19,8 +20,8 @@ export class NewKegComponent {
   constructor(){
     this.onSubmitNewKeg = new EventEmitter();
   }
-  addKeg(kegName: HTMLInputElement, kegBrand: HTMLInputElement, kegAlcoholContent: HTMLInputElement){
-    var newKeg = new Keg(kegName.value,kegBrand.value, parseInt(kegAlcoholContent.value));
+  addKeg(kegName: HTMLInputElement, kegBrand: HTMLInputElement, kegAlcoholContent: HTMLInputElement, kegPrice: HTMLInputElement){
+    var newKeg = new Keg(kegName.value,kegBrand.value, parseInt(kegAlcoholContent.value), parseInt(kegPrice.value));
     this.onSubmitNewKeg.emit(newKeg);
   }
 }
