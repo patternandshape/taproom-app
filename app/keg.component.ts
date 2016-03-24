@@ -7,7 +7,7 @@ import { Keg } from './keg.model';
   template: `
   <div>
     <button (click)="sellPint()" class="btn-success btn-lg add-button">Sell Pint</button>
-    <label>{{ keg.brand }} {{ keg.name }}, {{ keg.alcoholContent }}% ABV, \${{ keg.price }}</label>
+    <label>{{ keg.brand }} {{ keg.name }}, {{ keg.alcoholContent }}% ABV, \${{ keg.price }}, {{ keg.pints }} pints left</label>
   </div>
   `
 }) // does sellPint need any arguments?????

@@ -26,8 +26,8 @@ import { NewKegComponent} from './new-keg.component';
     <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
   `
 })
-// [class.cheap]="currentKeg.price =< 5"
-// [class.fancy]="currentKeg.price > 5"
+
+// *ngIf="currentKeg.price <= 5" [class.cheap]="currentKeg"
 export class KegListComponent {
   public kegList: Keg[];
   public onKegSelect: EventEmitter<Keg>;
