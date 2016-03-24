@@ -10,7 +10,7 @@ export class PintsPipe implements PipeTransform {
     var plentyOfPints = args[0];
     if(plentyOfPints === "lessThan10"){
       return input.filter((keg) => {
-      return (keg.pints <= 122);
+      return (keg.pints < 10);
       });
     } else {
       return input;

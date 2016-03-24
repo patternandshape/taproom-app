@@ -11,7 +11,10 @@ import { Keg } from './keg.model';
   <input placeholder="Brand" class="input-sm" #newBrand>
   <input placeholder="Alcohol Content" class="input-sm" #newAlcoholContent>
   <input placeholder="Price" class="input-sm" #newPrice>
-  <button (click)="addKeg(newName, newBrand, newAlcoholContent, newPrice)" class="btn-success btn-sm add-button">Add</button>
+  <button (click)="addKeg(newName, newBrand, newAlcoholContent, newPrice)" class="create btn-success btn-sm add-button">Add</button>
+  <div *ngIf="keg.pints < 122" class="lowKeg">
+  <h5>Less than 10 pints remaining!</h5>
+  </div>
   </div>
   `
 })

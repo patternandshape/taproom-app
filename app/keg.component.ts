@@ -6,11 +6,14 @@ import { Keg } from './keg.model';
   inputs: ['keg'],
   template: `
   <div>
-    <button (click)="sellPint()" class="btn-success btn-lg add-button">Sell Pint</button>
+    <button (click)="sellPint()" class="btn-success add-button">Sell Pint</button>
     <label>{{ keg.brand }} {{ keg.name }}, {{ keg.alcoholContent }}% ABV, \${{ keg.price }}, {{ keg.pints }} pints left</label>
+    <div *ngIf="keg.pints < 122" class="lowKeg">
+    <p>Less than 10 pints remaining!</p>
+    </div>
   </div>
   `
-}) 
+})
 export class KegComponent {
   public keg: Keg;
   sellPint() {

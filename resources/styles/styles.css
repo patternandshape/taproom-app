@@ -16,4 +16,21 @@ h1 {
 
 button {
   margin-top: 25px;
+  height: 100px;
+  width: 100px;
+  border: none;
+  border-radius: 50px;
+}
+
+.lowKeg {
+  color: red;
+  font-size: 1.5em;
+}
+
+.create {
+  margin-top: 25px;
+  height: 30px;
+  width: 75px;
+  border: none;
+  background: red;
 }
