@@ -19,6 +19,8 @@ import { NewKegComponent} from './new-keg.component';
     </select>
     <keg-display *ngFor="#currentKeg of kegList"
     (click)="kegClicked(currentKeg)"
+    [class.fancy]="currentKeg.price > 5"
+    [class.cheap]="currentKeg.price <= 5"
     [keg]="currentKeg">
     </keg-display>
     <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">

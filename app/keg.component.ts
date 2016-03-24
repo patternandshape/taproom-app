@@ -10,7 +10,7 @@ import { Keg } from './keg.model';
     <label>{{ keg.brand }} {{ keg.name }}, {{ keg.alcoholContent }}% ABV, \${{ keg.price }}, {{ keg.pints }} pints left</label>
   </div>
   `
-}) // does sellPint need any arguments?????
+}) 
 export class KegComponent {
   public keg: Keg;
   sellPint() {
