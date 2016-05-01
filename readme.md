@@ -22,14 +22,14 @@ An app where a bartender can keep track of their kegs. They can check how much i
 
 ### Technologies Used
 
-* HTML
-* CSS
 * Angular2
 * TypeScript
 * NPM
 * Node
 * Bower
 * Gulp
+* CSS
+* HTML
 
 
 ##### License
